@@ -280,10 +280,10 @@ class compression:
                                                                                     size_data4="00"
                                                                                     
                                                                                 elif Zeroes2=="01":
-                                                                                    size_data5="01"
+                                                                                    size_data4="01"
 
                                                                                 elif Zeroes2=="11":
-                                                                                    size_data5="11"   
+                                                                                    size_data4="11"   
 
 
                                                                                 
@@ -666,10 +666,10 @@ class compression:
                                                                                     size_data4="00"
                                                                                     
                                                                                 elif Zeroes2=="01":
-                                                                                    size_data5="01"
+                                                                                    size_data4="01"
 
                                                                                 elif Zeroes2=="11":
-                                                                                    size_data5="11"   
+                                                                                    size_data4="11"   
 
 
                                                                                 
