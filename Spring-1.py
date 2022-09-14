@@ -302,10 +302,7 @@ class compression:
                                                                                     size_data15=size_data5+size_data4+size_data7+size_data8
 
 
-                                                                                    Zeroes=size_data15[0:2]
-                                                                                    Zeroes2=size_data15[2:4]
-                                                                                    Zeroes3=size_data15[4:6]
-                                                                                    Zeroes4=size_data15[6:8]
+                                                                                    
                                                                                     t1=t1+1
                                                                                     
                                                                                     
@@ -572,6 +569,8 @@ class compression:
                                     size_data4=""
                                     size_data7=""
                                     size_data8=""
+                                    size_data5=""
+                                    size_data15=""
 
                                     long_file=len(size_data3)
 
@@ -639,51 +638,48 @@ class compression:
                                                                                     t=1
                                                                                     t1=0
                                                                                     while t1!=t: 
-                                                                                        if Zeroes=="00":
-                                                                                            size_data5="11"
+                                                                                        if Zeroes=="11":
+                                                                                            size_data5="00"
 
-                                                                                        elif Zeroes=="11":
-                                                                                            size_data5="00"                                                                               
+                                                                                        elif Zeroes=="00":
+                                                                                            size_data5="11"                                                                               
                                                                                         else:
                                                                                             size_data5=Zeroes
 
 
 
 
-                                                                                        if Zeroes2=="00":
-                                                                                            size_data4="10"
+                                                                                        if Zeroes2=="10":
+                                                                                            size_data4="00"
 
-                                                                                        elif Zeroes2=="10":
-                                                                                            size_data4="00"                                                                             
+                                                                                        elif Zeroes2=="00":
+                                                                                            size_data4="10"                                                                             
                                                                                         else:
                                                                                             size_data4=Zeroes2
 
 
-                                                                                        if Zeroes3=="10":
-                                                                                            size_data7="11"
+                                                                                        if Zeroes3=="11":
+                                                                                            size_data7="10"
 
-                                                                                        elif Zeroes3=="11":
-                                                                                            size_dat7="10"                                                                             
+                                                                                        elif Zeroes3=="10":
+                                                                                            size_dat7="11"                                                                             
                                                                                         else:
                                                                                             size_data7=Zeroes3
 
 
 
-                                                                                        if Zeroes4=="10":
-                                                                                            size_data8="11"
+                                                                                        if Zeroes4=="11":
+                                                                                            size_data8="10"
 
-                                                                                        elif Zeroes4=="11":
-                                                                                            size_data8="10"                                                                             
+                                                                                        elif Zeroes4=="10":
+                                                                                            size_data8="11"                                                                             
                                                                                         else:
                                                                                             size_data8=Zeroes4
 
                                                                                         size_data15=size_data5+size_data4+size_data7+size_data8
 
 
-                                                                                        Zeroes=size_data15[0:2]
-                                                                                        Zeroes2=size_data15[2:4]
-                                                                                        Zeroes3=size_data15[4:6]
-                                                                                        Zeroes4=size_data15[6:8]
+
                                                                                         t1=t1+1
 
 
