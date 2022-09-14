@@ -89,10 +89,6 @@ Reverse:
                                                                                     size_data15=size_data5+size_data4+size_data7+size_data8
 
 
-                                                                                    Zeroes=size_data15[0:2]
-                                                                                    Zeroes2=size_data15[2:4]
-                                                                                    Zeroes3=size_data15[4:6]
-                                                                                    Zeroes4=size_data15[6:8]
                                                                                     t1=t1+1
                                                                                     
                                                                                     
