@@ -293,12 +293,12 @@ class compression:
                                                                                         size_data7="11"
 
                                                                                 elif Zeroes3=="11":
-                                                                                        size_dat7="10"                                                                             
+                                                                                        size_data7="10"                                                                             
                                                                                 elif Zeroes3=="00":
                                                                                         size_data7="00"
 
                                                                                 elif Zeroes3=="01":
-                                                                                        size_dat7="01"
+                                                                                        size_data7="01"
 
 
 
@@ -306,12 +306,12 @@ class compression:
                                                                                         size_data8="11"
 
                                                                                 elif Zeroes4=="11":
-                                                                                        size_dat8="10"                                                                             
+                                                                                        size_data8="10"                                                                             
                                                                                 elif Zeroes4=="00":
                                                                                         size_data8="00"
 
                                                                                 elif Zeroes4=="01":
-                                                                                        size_dat8="01"
+                                                                                        size_data8="01"
 
 
                                                                                     
@@ -679,12 +679,12 @@ class compression:
                                                                                         size_data7="11"
 
                                                                                 elif Zeroes3=="11":
-                                                                                        size_dat7="10"                                                                             
+                                                                                        size_data7="10"                                                                             
                                                                                 elif Zeroes3=="00":
                                                                                         size_data7="00"
 
                                                                                 elif Zeroes3=="01":
-                                                                                        size_dat7="01"
+                                                                                        size_data7="01"
 
 
 
@@ -692,12 +692,12 @@ class compression:
                                                                                         size_data8="11"
 
                                                                                 elif Zeroes4=="11":
-                                                                                        size_dat8="10"                                                                             
+                                                                                        size_data8="10"                                                                             
                                                                                 elif Zeroes4=="00":
                                                                                         size_data8="00"
 
                                                                                 elif Zeroes4=="01":
-                                                                                        size_dat8="01"
+                                                                                        size_data8="01"
 
 
                                                                                     
