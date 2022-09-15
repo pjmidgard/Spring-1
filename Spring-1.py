@@ -314,12 +314,9 @@ class compression:
                                                                                         size_data8="01"
                                                                                         
                                                                                         
-                                                                                size_data15=size_data5+size_data4+size_data7+size_data8
-
-
-                                                                                    
-                                                                                size_data6=size_data6+size_data15
-                                                                                block=block+blocks
+                                                                                size_data6=size_data6+size_data5+size_data4+size_data7+size_data8
+                                                                                block=block+8
+                                                                                
                                                                                 #print(block)
                                                          
                                                     times_compression=times_compression+1
@@ -704,12 +701,11 @@ class compression:
 
 
                                                                                     
-                                                                                size_data15=size_data5+size_data4+size_data7+size_data8
-
+                                                                                
 
                                                                                     
-                                                                                size_data6=size_data6+size_data15
-                                                                                block=block+blocks
+                                                                                size_data6=size_data6+size_data5+size_data4+size_data7+size_data8
+                                                                                block=block+8
                                                                                     #print(block)
 
                                                         times_compression=times_compression+1
@@ -793,6 +789,7 @@ self=""
 d=compression()
     
 xw=d.cryptograpy_compression()
+print(xw)
 
 xw1=d.cryptograpy_unpack()
 print(xw1)
