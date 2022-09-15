@@ -33,10 +33,10 @@ class compression:
                    
                     long_block=100
                         
-                    namea="file.W"
+                    namea=""
                     namem=""
                     namema="?"
-                    Portal=2
+                   
                     assxw=0
                     blockw=5
                     blockw1=4
@@ -236,7 +236,7 @@ class compression:
                                                     
                                                     blocks=8
                                                     size_compress=63
-                                                 
+                                                    size_data1=""
                                                     
                                                      
                                                     block=0
@@ -253,69 +253,33 @@ class compression:
                                                     
                                                     while block<long:
 
-                                                                                Times6=Times6+1
-                                                                                Zeroes=size_data3[block:block+2]
-                                                                                Zeroes2=size_data3[block+2:block+4]
-                                                                                Zeroes3=size_data3[block+4:block+6]
-                                                                                Zeroes4=size_data3[block+6:block+8]
-                                                                             
-                                                                                if Zeroes=="00":
-                                                                                    size_data5="11"
-
-                                                                                elif Zeroes=="11":
-                                                                                    size_data5="00"                                                                               
-                                                                              
-                                                                                elif Zeroes=="01":
-                                                                                    size_data5="01"
-
-                                                                                elif Zeroes=="10":
-                                                                                    size_data5="10"   
-
-                                                                                    
-
-                                                                                if Zeroes2=="00":
-                                                                                    size_data4="10"
-
-                                                                                elif Zeroes2=="10":
-                                                                                    size_data4="00"
-                                                                                    
-                                                                                elif Zeroes2=="01":
-                                                                                    size_data4="01"
-
-                                                                                elif Zeroes2=="11":
-                                                                                    size_data4="11"   
-
-
                                                                                 
+                                                                                Zeroes=size_data3[block:block+8]
+                                                                                if Zeroes=="01101100":
+                                                                                	size_data1="00000000"                                                                                                        
+                                                                                elif Zeroes=="00000000":
+                                                                                	size_data1="01101100"                                                                                                        
+                                                                                elif Zeroes=="10000111":
+                                                                                	size_data1="11111111"                                   
+                                                                                elif Zeroes=="11111111":
+                                                                                	size_data1="10000111"
+                                                                                elif Zeroes=="00011011":
+                                                                                	size_data1="01010101"
+                                                                                elif Zeroes=="10000111":
+                                                                                	size_data1="10101010"
+                                                                                elif Zeroes=="10000111":
+                                                                                	size_data1="10101010"
+                                                                                elif Zeroes=="10101010":
+                                                                                	size_data1="10101010"
+                                                                                			                                                                                 
+                                                                                else: 
+                                                                                
+                                                                                	size_data1=Zeroes                                                                         
+                                                                                	                               
+                                                                                  
 
-
-                                                                                if Zeroes3=="10":
-                                                                                        size_data7="11"
-
-                                                                                elif Zeroes3=="11":
-                                                                                        size_data7="10"                                                                             
-                                                                                elif Zeroes3=="00":
-                                                                                        size_data7="00"
-
-                                                                                elif Zeroes3=="01":
-                                                                                        size_data7="01"
-
-
-
-                                                                                if Zeroes4=="10":
-                                                                                        size_data8="11"
-
-                                                                                elif Zeroes4=="11":
-                                                                                        size_data8="10"                                                                             
-                                                                                elif Zeroes4=="00":
-                                                                                        size_data8="00"
-
-                                                                                elif Zeroes4=="01":
-                                                                                        size_data8="01"
-                                                                                        
-                                                                                        
-                                                                                size_data6=size_data6+size_data5+size_data4+size_data7+size_data8
-                                                                                block=block+8
+                                                                                size_data6=size_data6+size_data1
+                                                                                block=block+blocks
                                                                                 
                                                                                 #print(block)
                                                          
@@ -635,76 +599,36 @@ class compression:
 
                                                         long=len(size_data3)
                                                         Times6=0
-                                                        size_data15=""
+                                                        size_data1=""
                                                         #print(long)
 
                                                         while block<long:
-                                                                                Times6=Times6+1
-                                                                                Zeroes=size_data3[block:block+2]
-                                                                                Zeroes2=size_data3[block+2:block+4]
-                                                                                Zeroes3=size_data3[block+4:block+6]
-                                                                                Zeroes4=size_data3[block+6:block+8]
-                                                                             
-                                                                                if Zeroes=="00":
-                                                                                    size_data5="11"
-
-                                                                                elif Zeroes=="11":
-                                                                                    size_data5="00"                                                                               
-                                                                              
-                                                                                elif Zeroes=="01":
-                                                                                    size_data5="01"
-
-                                                                                elif Zeroes=="10":
-                                                                                    size_data5="10"   
-
-                                                                                    
-
-                                                                                if Zeroes2=="00":
-                                                                                    size_data4="10"
-
-                                                                                elif Zeroes2=="10":
-                                                                                    size_data4="00"
-                                                                                    
-                                                                                elif Zeroes2=="01":
-                                                                                    size_data4="01"
-
-                                                                                elif Zeroes2=="11":
-                                                                                    size_data4="11"   
-
-
                                                                                 
-
-
-                                                                                if Zeroes3=="10":
-                                                                                        size_data7="11"
-
-                                                                                elif Zeroes3=="11":
-                                                                                        size_data7="10"                                                                             
-                                                                                elif Zeroes3=="00":
-                                                                                        size_data7="00"
-
-                                                                                elif Zeroes3=="01":
-                                                                                        size_data7="01"
-
-
-
-                                                                                if Zeroes4=="10":
-                                                                                        size_data8="11"
-
-                                                                                elif Zeroes4=="11":
-                                                                                        size_data8="10"                                                                             
-                                                                                elif Zeroes4=="00":
-                                                                                        size_data8="00"
-
-                                                                                elif Zeroes4=="01":
-                                                                                        size_data8="01"
-
-
-                                                                                    
+                                                                                Zeroes=size_data3[block:block+8]
+                                                                                                                                                                
+                                                                                if Zeroes=="01101100":
+                                                                                	size_data1="00000000"                                                                                                        
+                                                                                elif Zeroes=="00000000":
+                                                                                	size_data1="01101100"                                                                                                        
+                                                                                elif Zeroes=="10000111":
+                                                                                	size_data1="11111111"                                   
+                                                                                elif Zeroes=="11111111":
+                                                                                	size_data1="10000111"
+                                                                                elif Zeroes=="00011011":
+                                                                                	size_data1="01010101"
+                                                                                elif Zeroes=="10000111":
+                                                                                	size_data1="10101010"
+                                                                                elif Zeroes=="10000111":
+                                                                                	size_data1="10101010"
+                                                                                elif Zeroes=="10101010":
+                                                                                	size_data1="10101010"
+                                                                                			                                                                                 
+                                                                                else: 
                                                                                 
+                                                                                	size_data1=Zeroes                       
 
                                                                                     
-                                                                                size_data6=size_data6+size_data5+size_data4+size_data7+size_data8
+                                                                                size_data6=size_data6+size_data1
                                                                                 block=block+8
                                                                                     #print(block)
 
