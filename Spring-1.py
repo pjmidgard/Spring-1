@@ -264,13 +264,14 @@ class compression:
                                                                                 elif Zeroes=="11111111":
                                                                                 	size_data1="10000111"
                                                                                 elif Zeroes=="00011011":
-                                                                                	size_data1="01010101"
-                                                                                elif Zeroes=="10000111":
-                                                                                	size_data1="10101010"
+                                                                                	size_data1="01010101"                                                                                elif Zeroes=="01010101":
+                                                                                	size_data1="00011011"
+                                                                                	
                                                                                 elif Zeroes=="10000111":
                                                                                 	size_data1="10101010"
                                                                                 elif Zeroes=="10101010":
-                                                                                	size_data1="10101010"
+                                                                                	size_data1="10000111"
+                                                                                elif 
                                                                                 			                                                                                 
                                                                                 else: 
                                                                                 
