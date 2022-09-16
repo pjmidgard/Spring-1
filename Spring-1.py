@@ -255,24 +255,27 @@ class compression:
 
                                                                                 
                                                                                 Zeroes=size_data3[block:block+8]
+                                                                
                                                                                 if Zeroes=="01101100":
                                                                                 	size_data1="00000000"                                                                                                        
                                                                                 elif Zeroes=="00000000":
-                                                                                	size_data1="01101100"                                                                                                        
+                                                                                	size_data1="01101100" 
+                                                                                    
                                                                                 elif Zeroes=="10000111":
                                                                                 	size_data1="11111111"                                   
                                                                                 elif Zeroes=="11111111":
                                                                                 	size_data1="10000111"
+                                                                                    
                                                                                 elif Zeroes=="00011011":
-                                                                                	size_data1="01010101"                                                                                elif Zeroes=="01010101":
+                                                                                	size_data1="01010101"
+                                                                                elif Zeroes=="01010101":
                                                                                 	size_data1="00011011"
                                                                                 	
                                                                                 elif Zeroes=="10000111":
                                                                                 	size_data1="10101010"
                                                                                 elif Zeroes=="10101010":
                                                                                 	size_data1="10000111"
-                                                                                elif 
-                                                                                			                                                                                 
+                                                                                                                                                                 
                                                                                 else: 
                                                                                 
                                                                                 	size_data1=Zeroes                                                                         
@@ -610,23 +613,26 @@ class compression:
                                                                                 if Zeroes=="01101100":
                                                                                 	size_data1="00000000"                                                                                                        
                                                                                 elif Zeroes=="00000000":
-                                                                                	size_data1="01101100"                                                                                                        
+                                                                                	size_data1="01101100" 
+                                                                                    
                                                                                 elif Zeroes=="10000111":
                                                                                 	size_data1="11111111"                                   
                                                                                 elif Zeroes=="11111111":
                                                                                 	size_data1="10000111"
+                                                                                    
                                                                                 elif Zeroes=="00011011":
                                                                                 	size_data1="01010101"
-                                                                                elif Zeroes=="10000111":
-                                                                                	size_data1="10101010"
+                                                                                elif Zeroes=="01010101":
+                                                                                	size_data1="00011011"
+                                                                                	
                                                                                 elif Zeroes=="10000111":
                                                                                 	size_data1="10101010"
                                                                                 elif Zeroes=="10101010":
-                                                                                	size_data1="10101010"
-                                                                                			                                                                                 
+                                                                                	size_data1="10000111"
+                                                                                                                                                                 
                                                                                 else: 
                                                                                 
-                                                                                	size_data1=Zeroes                       
+                                                                                	size_data1=Zeroes                        
 
                                                                                     
                                                                                 size_data6=size_data6+size_data1
