@@ -16,7 +16,7 @@ What parts and components are required?
 
  
 
-It's required to install paq to install paq you need to pip install cython and next pip install paq you need Python 3.7.5. or python -m pip install cython and python -m pip install paq.
+It's required to install paq to install paq you need to pip install cython and next pip install paq you need Python 3.7.4. or python -m pip install cython and python -m pip install paq.
 
  
 
@@ -56,3 +56,4 @@ I makes New method of Reverse to improve comression.
  
 
 Once received, we will be able to complete your free initial review.
+It's Reverse that improve 3.23% compression.
