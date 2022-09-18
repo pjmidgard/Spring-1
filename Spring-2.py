@@ -97,6 +97,8 @@ class compression:
                         data = binary_file.read()
                         if data[0:8]==b'\xd0\xcf\x11\xe0\xa1\xb1\x1a\xe1':
                         	data=b'\xd0'+data[8:]
+                        else:
+                        	data=b'\x00'+data
                         #import paq
                         #data=paq.compress(data)
                         data1=data
@@ -448,7 +450,8 @@ class compression:
                         if data[0:1]==b'\xd0':
   
                         	data=b'\xd0\xcf\x11\xe0\xa1\xb1\x1a\xe1'+data[1:]
-                        
+                        else:
+                        	data=data[1:]
 
                         if len(data)==0:
                             x4=0.0
