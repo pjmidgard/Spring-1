@@ -56,4 +56,4 @@ I makes New method of Reverse to improve comression.
  
 
 Once received, we will be able to complete your free initial review.
-It's Reverse that improve 3.23% and 3.24% compression.
+It's Reverse that improve 3.23% and 3.45% compression.
