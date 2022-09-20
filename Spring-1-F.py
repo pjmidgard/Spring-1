@@ -75,12 +75,6 @@ class compression:
                     corridors=0
                     cor=7
                     name = input("What is name of file? ")
-                   
-                    if os.path.exists(name):
-                            print('Path is exists!')
-                    else:
-                            print('Path is not exists!')
-                            raise SystemExit
                     namea=""
                     namem=""
                     namema="?"
@@ -141,10 +135,7 @@ class compression:
                        # Read the whole file at once
                         data = binary_file.read()
                       
-                        if len(data)==0:
-                            x4=0.0
-                            print(x4)
-                            return print(x4)
+                 
                        
 
                   
@@ -753,12 +744,6 @@ class compression:
                     corridors=0
                     cor=7
                     name = input("What is name of file? ")
-                  
-                    if os.path.exists(name):
-                            print('Path is exists!')
-                    else:
-                            print('Path is not exists!')
-                            raise SystemExit
                     Portal=2
                     namea="file.W"
                     namem=""
@@ -831,11 +816,6 @@ class compression:
                        # Read the whole file at once
                         
                         data = binary_file.read()
-                        
-                        if len(data)==0:
-                            x4=0.0
-                            print(x4)
-                            return print(x4)
                      
                                              
                         import paq
