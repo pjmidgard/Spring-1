@@ -444,7 +444,7 @@ class compression:
 
                         data=data3
 
-                        data=b'\x00\x64\x00\x00'+data
+                        data=b'\x00\x63\x00\x00'+data
                         import paq
                         data= paq.decompress(data)
                         if data[0:1]==b'\xd0':
