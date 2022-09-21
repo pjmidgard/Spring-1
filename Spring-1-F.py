@@ -75,6 +75,12 @@ class compression:
                     corridors=0
                     cor=7
                     name = input("What is name of file? ")
+                   
+                    if os.path.exists(name):
+                            print('Path is exists!')
+                    else:
+                            print('Path is not exists!')
+                            raise SystemExit
                     namea=""
                     namem=""
                     namema="?"
@@ -135,7 +141,10 @@ class compression:
                        # Read the whole file at once
                         data = binary_file.read()
                       
-                 
+                        if len(data)==0:
+                            x4=0.0
+                            print(x4)
+                            return print(x4)
                        
 
                   
@@ -586,6 +595,18 @@ class compression:
                                 if cvf1==1:
 
 
+                                    Deep_long=240
+                                    Deep_long_All=Deep_long*16
+                                    block_size_long=16
+                                    Times_compression=1
+
+
+                                    size_data6=""
+                                    size_data4=""
+                                    size_data7=""
+                                    size_data8=""
+
+
                                     size_data3=sda3
                                     size_data10=sda3
 
@@ -721,6 +742,8 @@ class compression:
                                    
                                     import paq
                                     jl= paq.compress(jl)
+
+                                    jl=jl[4:]
                                     
                                     
                                     
@@ -744,6 +767,12 @@ class compression:
                     corridors=0
                     cor=7
                     name = input("What is name of file? ")
+                  
+                    if os.path.exists(name):
+                            print('Path is exists!')
+                    else:
+                            print('Path is not exists!')
+                            raise SystemExit
                     Portal=2
                     namea="file.W"
                     namem=""
@@ -816,6 +845,15 @@ class compression:
                        # Read the whole file at once
                         
                         data = binary_file.read()
+                        
+                        if len(data)==0:
+                            x4=0.0
+                            print(x4)
+                            return print(x4)
+
+
+
+                        data=b'\x00\x63\x00\x00'+data
                      
                                              
                         import paq
@@ -1269,6 +1307,17 @@ class compression:
                                 if cvf1==1:
 
 
+                                    Deep_long=240
+                                    Deep_long_All=Deep_long*16
+                                    block_size_long=16
+                                    Times_compression=1
+
+                                    size_data6=""
+                                    size_data4=""
+                                    size_data7=""
+                                    size_data8=""
+
+
                                     size_data3=sda3
                                     size_data10=sda3
 
@@ -1402,6 +1451,9 @@ class compression:
                                     qqwslenf="%0"+qqwslenf+"x"
                              
                                     jl=binascii.unhexlify(qqwslenf % n)
+
+
+                                    
                                  
                                
                                     sssssw=len(jl) 
