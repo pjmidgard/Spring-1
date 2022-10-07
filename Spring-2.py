@@ -337,7 +337,7 @@ class compression:
                                     
                                     import paq
                                     jl= paq.compress(jl)
-                                    jl=jl[4:]
+                                    
                                    
                                     
 
@@ -444,7 +444,7 @@ class compression:
 
                         data=data3
 
-                        data=b'\x00\x63\x00\x00'+data
+                        
                         import paq
                         data= paq.decompress(data)
                         if data[0:1]==b'\xd0':
