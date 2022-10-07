@@ -743,7 +743,7 @@ class compression:
                                     import paq
                                     jl= paq.compress(jl)
 
-                                    jl=jl[4:]
+                                   
                                     
                                     
                                     
@@ -853,7 +853,7 @@ class compression:
 
 
 
-                        data=b'\x00\x63\x00\x00'+data
+                        
                      
                                              
                         import paq
